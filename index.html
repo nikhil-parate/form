@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "forms.js"></script>
+    <link rel="styleSheet" href="forms.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body style="background-color:  thistle;">
+    <div>
+        <div class="row">
+            <div class="col-3 tab">
+    <form>
+        <label>Enter First Name</label>
+        <input placeholder="Firstname" id="first" class="ele"><br><br>
+        <label>Enter Last Name</label>
+        <input placeholder="Lastname" id ="last" class="ele"><br><br>
+        <label>Address</label>
+        <input placeholder="address" id="address" class="ele"><br><br>
+        <label>Pincode</label>
+        <input placeholder="pincode" id="pincode" class="ele"><br><br>
+        <label>Gender</label>
+        <input placeholder="gender" id="gender" class="ele"><br><br>
+        <label>Choice Of Food</label>
+        <input placeholder="choice" id="choice" class="ele"><br><br>
+        <label>State</label>
+        <input placeholder="state" id="state" class="ele"><br><br>
+        <label>Country</label>
+        <input placeholder="Country" id="country" class="ele"><br><br>
+        <button onclick="addData()">Submit</button><br><br>
+    </form>
+</div>
+<div class="col tab">
+    <table style="width:100%" id="result">
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Address</th>
+            <th>PinCode</th>
+            <th>Gender</th>
+            <th>Food</th>
+            <th>State</th>
+            <th>Country</th>
+        </tr>
+    </table>
+</div>
+</div>
+</div>
+</body>
+</html>
