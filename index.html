@@ -11,28 +11,45 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body style="background-color:  thistle;">
+<body style="background-color:  #E0E0E0;">
     <div>
         <div class="row">
             <div class="col-3 tab">
-    <form onsubmit="addData()">
+                <br><br>
+    <form>
         <label>Enter First Name</label>
-        <input placeholder="Firstname" id="first" class="ele"><br><br>
+        <input type="text"placeholder="Firstname" id="first" class="ele"><br><br>
         <label>Enter Last Name</label>
-        <input placeholder="Lastname" id ="last" class="ele"><br><br>
+        <input type="text"placeholder="Lastname" id ="last" class="ele"><br><br>
         <label>Address</label>
-        <input placeholder="address" id="address" class="ele"><br><br>
+        <input type="text"placeholder="address" id="address" class="ele"><br><br>
         <label>Pincode</label>
-        <input placeholder="pincode" id="pincode" class="ele"><br><br>
-        <label>Gender</label>
-        <input placeholder="gender" id="gender" class="ele"><br><br>
+        <input type="text"placeholder="pincode" id="pincode" class="ele"><br><br>    
+        <label>Gender</label>    
+        <div class="al">
+        <label for="male">Male</label>
+        <input type = "radio" value = "male" id="male" class="ele1">
+        <label for="female">Female</label>
+        <input type = "radio" value = "female" id="female" class="ele1">
+        </div><br><br>
         <label>Choice Of Food</label>
-        <input placeholder="choice" id="choice" class="ele"><br><br>
+        <div class="ab">
+        <label>Dhokla</label>
+        <input type = "radio" value = "Dhokla" id="Dhokla" class="ele2" checked><br>
+        <label>Idli</label>
+        <input type = "radio" value = "Idli" id="Idli" class="ele2" checked><br>
+        <label>Dosa</label>
+        <input type = "radio" value = "Dosa" id="Dosa" class="ele2"><br>
+        <label>Samosa</label>
+        <input type = "radio" value = "Samosa" id="Samosa" class="ele2"><br>
+        <label>Poha</label>
+        <input type = "radio" value = "Poha" id="Poha" class="ele2"><br>
+        </div><br><br><br><br><br><br><br>
         <label>State</label>
-        <input placeholder="state" id="state" class="ele"><br><br>
+        <input type="text"placeholder="state" id="state" class="ele"><br><br>
         <label>Country</label>
-        <input placeholder="Country" id="country" class="ele"><br><br>
-        <input type="submit"><br><br>
+        <input type="text"placeholder="Country" id="country" class="ele"><br><br>
+        <input type="button" value="Submit" onclick="addData()"><br><br>
     </form>
 </div>
 <div class="col tab">
@@ -43,7 +60,7 @@
             <th>Address</th>
             <th>PinCode</th>
             <th>Gender</th>
-            <th>Food</th>
+            <th colspan="5">Food</th>
             <th>State</th>
             <th>Country</th>
         </tr>
